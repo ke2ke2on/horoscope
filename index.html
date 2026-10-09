@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오늘의 별자리 운세</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <main>
+    <header>
+      <h1>✨ 오늘의 별자리 운세</h1>
+      <p id="today"></p>
+    </header>
+
+    <section class="birth">
+      <span class="birth-label">생일로 찾기</span>
+      <select id="birth-m" aria-label="월"></select>
+      <select id="birth-d" aria-label="일"></select>
+      <button type="button" id="birth-go">확인</button>
+    </section>
+    <div id="birth-result" class="birth-result" hidden aria-live="polite"></div>
+
+    <section id="grid" class="grid" aria-label="별자리 선택"></section>
+
+    <section id="result" class="result" hidden aria-live="polite"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
